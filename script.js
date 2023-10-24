@@ -8,13 +8,13 @@ bandNames.sort(a,b=>
 for(let i = 0;i<bandNames.length;i++){
 	const li = document.createElement("li")
 	li.innerText = bandNames[i]
-	ref.append(li);
+	ref.appendChild(li);
 }
 function strip(word){
 	let arr = word.split(" ");
 	let s = "";
 	for(let i = 0;i<arr.length;i++){
-		if(articles.indexOf(arr[i]).toUpperCase()) === -1{
+		if(articles.indexOf(arr[i]).toUpperCase()) === -1){
 			s = s+arr[i];
 		}
 	}
