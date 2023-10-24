@@ -8,7 +8,7 @@ bandNames.sort((a,b)=>
 for(let i = 0;i<bandNames.length;i++){
 	const li = document.createElement("li")
 	li.innerText = bandNames[i]
-	ref.appendChild(li);
+	ref.append(li);
 }
 function strip(word){
 	let arr = word.split(" ");
